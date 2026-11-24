@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Yash-Jewellery - Contact Us</title>
+        <title>Yash &amp; Co. - Contact Us</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
         <section id="header">
-            <a href="index.html"><img src="img/logon.png" class="logo" alt="Yash-Jewellery" width="80" height="80"></a>
-
-            <div>             
-                <ul id="navbar">
-                    <li>
-                        <form>
-                            <label for="search">Search</label>
-                            <input id="search" type="search" pattern=".*\S.*" required>
-                            <span class="caret"></span>
-                        </form>
-                    </li>
-                    <li><a  href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>                  
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="contact.html">Contact</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
-                </ul>              
+            <a class="brand" href="index.html"><img src="img/logo.svg" class="logo" alt="Yash &amp; Co. Jewellers" width="180" height="49"></a>
+            <ul id="navbar">
+                <li class="nav-search">
+                    <form role="search">
+                        <i class="fas fa-search"></i>
+                        <input id="search" type="search" placeholder="Search jewellery" aria-label="Search jewellery">
+                    </form>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li id="lg-bag"><a href="cart.html" aria-label="Cart"><i class="fas fa-shopping-bag"></i></a></li>
+                <a href="#" id="close" aria-label="Close menu"><i class="fas fa-times"></i></a>
+            </ul>
+            <div id="mobile">
+                <a href="cart.html" aria-label="Cart"><i class="fas fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-bars" aria-label="Open menu"></i>
             </div>
         </section>
 
@@ -37,13 +41,13 @@
                 <p>Feel free to get in touch with us. We'd love to hear from you.</p>
                 <div class="contact-info">
                     <h4>Address</h4>
-                    <p>1234 Nairobi Road, Street, Nairobi</p>
+                    <p>1234 Nairobi Road, Nairobi</p>
 
                     <h4>Email</h4>
                     <p>info@yash-jewellery.com</p>
 
                     <h4>Phone</h4>
-                    <p>+01 2345 6542 / (+91) 01 4532 4654</p>
+                    <p>+254 700 000 000</p>
 
                     <h4>Working Hours</h4>
                     <p>Monday to Saturday: 10:00 AM - 6:00 PM</p>
@@ -66,53 +70,45 @@
 
         </section>
 
-        <footer class="section-p1">
-            <div class="col">
-                <img class="logo" src="img/logof.jpg" alt="">
-                <h4>Contact</h4>
-                <p><strong>Address:</strong> 1234 Nairobi Road, Street, Nairobi</p>
-                <p><strong>Phone:</strong> +01 2345 6542 / (+91) 01 4532 4654</p>
-                <p><strong>Availability:</strong> 10:00 - 18:00, Mon - Sat</p>
-                <div class="follow">
-                    <h4>Follow us</h4>
-                    <div class="icon">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-youtube"></i>
+        <footer>
+            <div class="footer-inner">
+                <div class="col brand-col">
+                    <img class="logo" src="img/logo-light.svg" alt="Yash &amp; Co. Jewellers" width="200" height="55">
+                    <p>Fine jewellery crafted with care in Nairobi since 2020.</p>
+                    <div class="follow">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                <div class="col">
+                    <h4>Shop</h4>
+                    <a href="neckless.html">Necklaces</a>
+                    <a href="earrings.html">Earrings</a>
+                    <a href="bracelets.html">Bracelets</a>
+                    <a href="rings.html">Rings</a>
+                    <a href="pendants.html">Pendants</a>
+                    <a href="brooch.html">Brooches</a>
+                </div>
+                <div class="col">
+                    <h4>Company</h4>
+                    <a href="about.html">About us</a>
+                    <a href="contact.html">Contact us</a>
+                    <a href="login.html">Sign in</a>
+                    <a href="register.html">Create account</a>
+                    <a href="cart.html">View cart</a>
+                </div>
+                <div class="col">
+                    <h4>Visit us</h4>
+                    <p>1234 Nairobi Road, Nairobi</p>
+                    <p>+254 700 000 000</p>
+                    <p>info@yash-jewellery.com</p>
+                    <p>Mon to Sat, 10:00 to 18:00</p>
+                </div>
             </div>
-
-            <div class="col">
-                <h4>About</h4>
-                <a href="#">About us</a>
-                <a href="#">Delivery Information</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Contact Us</a>
-            </div>
-
-            <div class="col">
-                <h4>My Account</h4>
-                <a href="#">Sign In</a>
-                <a href="#">View Cart</a>
-                <a href="#">My Wishlist</a>
-                <a href="#">Track My Order</a>
-                <a href="#">Help</a>
-            </div>
-
-            <div class="col">
-                <h4>Diamond Club</h4>
-                <a href="#">Pricing</a>
-                <a href="#">History</a>
-                <a href="#">Return</a>
-                <a href="#">Application</a>
-                <a href="#">Rules</a>
-            </div>
-
             <div class="copyright">
-                <p>© 2023 Yash-Jewellery. All rights reserved.</p>
+                <p>&copy; 2026 Yash &amp; Co. Jewellers. All rights reserved.</p>
             </div>
         </footer> 
         <script src="app.js"></script>
